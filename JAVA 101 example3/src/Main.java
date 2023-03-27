@@ -68,6 +68,25 @@ public class Main {
             }
         }
 
+        //TEK SAYILARIN TOPLAMINI BULAN PROGRAM
+
+        int w ;
+        int total = 0;
+
+        Scanner ınp = new Scanner(System.in);
+
+        System.out.print("Sayı Gir:");
+        w = ınp.nextInt();
+
+        for (int z = 1 ; z<=w ; z+=2){
+            if(z%2 == 1);
+            System.out.println(z);
+            total += z;
+        }
+
+        System.out.print("Toplam = " + total);
+
+
 
 
         }
