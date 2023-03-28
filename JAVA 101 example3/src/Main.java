@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-/*
+
         //WHİLE DÖNGÜ YAPILARI
 
         int a = 1;
@@ -85,9 +85,9 @@ public class Main {
         }
 
         System.out.print("Toplam = " + total);
-*/
 
-        
+
+
         //FAKTORİYEL HESAPLAMA
 
         System.out.println("\n");
