@@ -103,6 +103,31 @@ public class Main {
         }
         System.out.println("Faktoriyel = " + total1);
 
+        //ÜSLÜ SAYI HESAPLAYAN PROGRAM
+
+        System.out.println("\n");
+
+        Scanner in = new Scanner(System.in);
+
+        int a1;
+        int b1;
+
+        System.out.print("Üssü alınacak sayıyı girin:");
+        a1 = in.nextInt();
+        System.out.print("Üs olacak sayıyı girin:");
+        b1 = in.nextInt();
+
+        int total2 = 1;
+
+        int i = 1;
+
+        while(i<=b1){
+            total2 *=  a1;
+            i++;
+        }
+        System.out.println("Sonuç =  " + total2);
+
+
 
 
 
