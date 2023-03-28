@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
+/*
         //WHİLE DÖNGÜ YAPILARI
 
         int a = 1;
@@ -85,6 +85,24 @@ public class Main {
         }
 
         System.out.print("Toplam = " + total);
+*/
+
+        
+        //FAKTORİYEL HESAPLAMA
+
+        System.out.println("\n");
+        Scanner ın = new Scanner(System.in);
+        int n ;
+        int total1 = 1;
+
+        System.out.print("Faktoriyel Sayısı Girin:");
+        n = ın.nextInt();
+
+        for(int i = 1 ; i<=n ; i++){
+            total1 = total1 * i;
+        }
+        System.out.println("Faktoriyel = " + total1);
+
 
 
 
