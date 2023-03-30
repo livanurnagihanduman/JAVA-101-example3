@@ -131,6 +131,50 @@ public class Main {
 
 
 
+        //ARMSTONG SAYI BULAN PROGRAM
+
+        System.out.println("\n");
+
+        Scanner z = new Scanner(System.in);
+
+        System.out.print("Sayı Giriniz: ");
+        int number = z.nextInt();
+
+        int basNumber = 0;
+        int tempNumber = number;
+        int basValue;
+        int result = 0;
+        int basPow;
+
+        while(tempNumber != 0){
+            tempNumber /= 10;
+            basNumber++;
+        }
+        tempNumber = number;
+
+        while(tempNumber != 0){
+            basValue = tempNumber % 10;
+            basPow = 1;
+            for(int i1 = 1 ; i1<= basNumber ; i1++){
+                basPow *= basValue;
+            }
+            result += basPow;
+            tempNumber /= 10;
+        }
+        if(number == result){
+            System.out.println(number + " sayısı bir Armstrong'dur");
+        }else{
+            System.out.println(number + " sayısı bir Armstrong değildir.");
+        }
+
+
+
+
+
+
+
+
+
 
         }
 
