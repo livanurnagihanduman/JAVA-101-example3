@@ -171,6 +171,25 @@ public class Main {
 
 
 
+        // HARMONİK SAYILARI BULAN PROGRAM
+
+        Scanner q = new Scanner(System.in);
+        System.out.print("Bir K sayısı giriniz: ");
+        int k = q.nextInt();
+        double result1 = 0.0;
+
+        for(double s = 1; s<=k ; s++ ){
+            result1 += 1/s;
+        }
+        System.out.print(result1);
+
+
+
+
+
+
+
+
 
 
 
