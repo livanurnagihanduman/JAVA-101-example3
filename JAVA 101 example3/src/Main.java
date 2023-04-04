@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-/*
+
         //WHİLE DÖNGÜ YAPILARI
 
         int a = 1;
@@ -186,7 +186,7 @@ public class Main {
 
 
 
- */
+
         //EBOB EKOK BULAN PROGRAM
 
         Scanner keyboard = new Scanner(System.in);
