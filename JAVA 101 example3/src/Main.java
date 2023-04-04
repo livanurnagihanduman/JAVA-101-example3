@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
+/*
         //WHİLE DÖNGÜ YAPILARI
 
         int a = 1;
@@ -182,6 +182,57 @@ public class Main {
             result1 += 1/s;
         }
         System.out.print(result1);
+
+
+
+
+ */
+        //EBOB EKOK BULAN PROGRAM
+
+        Scanner keyboard = new Scanner(System.in);
+        int n1;
+        int n2;
+        System.out.print("Lütfen n1 sayısı giriniz: ");
+        n1 = keyboard.nextInt();
+
+        System.out.print("Lütfen n2 sayısı giriniz: ");
+        n2 = keyboard.nextInt();
+        int ebob = 1;
+
+        //EBOB
+
+        for(int y = 1 ; y <= n1 ; y++){
+            if((n1 % y == 0) && (n2 % y == 0)){
+                System.out.println(y);
+                ebob = y;
+            }
+        System.out.print("********************");
+        System.out.print("\n");
+
+        for(int m = n1; m>=1;m--){
+            if((n1 % m == 0) && (n2 % m == 0)){
+                System.out.println("Ebob = " + m);
+                ebob = m;
+                break;
+                }
+            }
+
+        //EKOK
+
+        System.out.print("**********");
+            System.out.print("\n");
+
+
+
+            for(int z = 1; z<=(n1*n2); z++){
+            if((z % n1 == 0) && (z % n2 == 0)){
+                System.out.println(z);
+                break;
+            }
+        }
+        System.out.println("Ekok = " + (n1 * n2)/ebob);
+        }
+
 
 
 
