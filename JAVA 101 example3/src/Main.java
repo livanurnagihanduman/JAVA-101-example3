@@ -296,8 +296,8 @@ public class Main {
         int sayi = key1.nextInt();
 
         for(int ix = 1; ix < sayi ; i++){
-            if(sayi % i == 0){
-                toplam += i;
+            if(sayi % ix == 0){
+                toplam += ix;
             }
 
         }if(sayi == toplam){
@@ -309,8 +309,27 @@ public class Main {
 
 
 
+        //TERS ÜÇGEN YAPIMI
+
+        int ix,j,kx;//Değişekenlerimizi tanımladık.
+        for (ix=8; 0<ix; ix--) {//Döngümüzün ne kadar döneceğini belirtir.
+            for(j=ix; j<8;j++) {//Üçgenimizi yaparken ekran çıktısının sol tarafındaki boşluğu belirtir.
+                System.out.print(" ");//Boşluğumuzu belirtiyoruz.
+            }
+            for (kx=1; kx<=ix; kx++) {//Yıldız sembolümüzün yazılmasını sağlar.
+                System.out.print("*");//Sembolümüzü belirledik ve çıktısını sağladık.
+                System.out.print(" ");//Yıldız sembolümüzün arasına boşluk koyulmasını sağlar.
+            }
+            System.out.println(" ");//Döngüden sonra diğer satıra atlamamızı sağlar.
+        }
+
+
+        }
+
+
+
     }
-}
+
 
 
 
