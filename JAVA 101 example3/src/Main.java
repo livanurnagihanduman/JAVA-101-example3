@@ -224,9 +224,9 @@ public class Main {
 
 
 
-            for(int z = 1; z<=(n1*n2); z++){
-            if((z % n1 == 0) && (z % n2 == 0)){
-                System.out.println(z);
+            for(int z1 = 1; z1<=(n1*n2); z1++){
+            if((z1 % n1 == 0) && (z1 % n2 == 0)){
+                System.out.println(z1);
                 break;
             }
         }
@@ -234,19 +234,84 @@ public class Main {
         }
 
 
+        //MAN VE MİN SAYILARI BULAN PROGRAM
+
+        Scanner key = new Scanner(System.in);
+        System.out.print("\n");
+        int ı;
+        int sayi1;
+        int sayi2;
+        int sayi3;
+        int sayi4;
+        sayi1 = key.nextInt();
+        sayi2 = key.nextInt();
+        sayi3 = key.nextInt();
+        sayi4 = key.nextInt();
+
+        System.out.print("Kaç tane sayı gireceksiniz: ");
+        ı = key.nextInt();
+
+
+        for(int s = 1; s<=ı ; s++){
+            if(ı == 4){
+                System.out.println("1.sayıyı giriniz: " +
+                                   "2.sayıyı giriniz: " +
+                                   "3.sayıyı giriniz: " +
+                                   "4.sayıyı giriniz: ");
+
+
+                if((sayi1<sayi2)&&(sayi1<sayi3)&&(sayi1<sayi4)){
+                    System.out.println(sayi1);
+                }else{
+                    System.out.println(sayi2);
+                    System.out.println(sayi3);
+                    System.out.println(sayi4);
+                }
+
+
+            }if((sayi2<sayi1)&&(sayi2<sayi3)&&(sayi2<sayi4)){
+                System.out.println(sayi2);
+                }else{
+                    System.out.println(sayi1);
+                    System.out.println(sayi3);
+                    System.out.println(sayi4);
+                }
+
+                }if((sayi3<sayi1)&&(sayi3<sayi2)&&(sayi3<sayi4)){
+                    System.out.println(sayi3);
+                }else{
+                     System.out.println(sayi1);
+                     System.out.println(sayi2);
+                     System.out.println(sayi4);
+                }
 
 
 
+        //MÜKEMMEL SAYI PROGRAMI
 
+        Scanner key1 = new Scanner(System.in);
+        int toplam = 0;
 
+        System.out.print("Bir sayı giriniz: ");
+        int sayi = key1.nextInt();
 
+        for(int ix = 1; ix < sayi ; i++){
+            if(sayi % i == 0){
+                toplam += i;
+            }
 
-
-
-
-
+        }if(sayi == toplam){
+            System.out.println("Tebrikler Mükemmel Sayı!!!");
+        }else{
+            System.out.println("Üzgünüz Mükemmel Sayı Değil!!!");
 
         }
 
 
+
     }
+}
+
+
+
+
